@@ -29,7 +29,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Players />
+        <Players 
+        players={this.state.players}/>
       </div>
     )
   }
