@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import axios from 'axios'
+import NavBar from './Components/NavBar'
 import Players from './Components/Players'
 
 
@@ -29,6 +30,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavBar />
         <Players 
         players={this.state.players}/>
       </div>
